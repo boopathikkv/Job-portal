@@ -1,0 +1,105 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: rgba(20, 43, 78, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 30px;
+  margin-left: 150px;
+}
+
+/* Style for buttons inside the sidebar */
+.sidenav button {
+  width: calc(100% - 64px); /* Adjust width considering padding */
+  padding: 8px;
+  margin: 8px 32px;
+  background-color: white;
+  color: rgba(20, 43, 78, 1);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+@media (min-width: 993px) {
+  .navbar-nav {
+    display: flex !important;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+@media (max-width:426px){
+  .navbar-container img{
+height: 50px;
+  }
+}
+@media (max-width:376px){
+  .navbar-container img{
+height: 50px;
+  }
+}
+@media (max-width:320px){
+  .navbar-container img{
+height: 50px;
+  }
+}
+
+/* Add padding to the navbar for right and left gaps */
+.navbar {
+  background: rgba(20, 43, 78, 1);
+}
+
+.navbar-container {
+  padding-left: 18px;
+  padding-right: 15px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 25px;
+  color: white !important;
+}

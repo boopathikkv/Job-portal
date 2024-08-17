@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>job portal</title>
+  <link rel="icon" href="./Images/logo.jpg">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="jobs-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container navbar-container">
+      <img src="./Images/logo.jpg" alt="">
+      <button class="navbar-toggler" type="button" onclick="openNav()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto d-none d-lg-flex">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+    
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Services</a>
+    <a href="#">Jobs</a>
+    <a href="#">Blogs</a>
+    <a href="#">Contact us</a></div>
+
+  </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="text-center">
+          <img src="Images/banner.jpg" alt="Job Seekers" class="img-fluid">
+          <h2>Job Seekers</h2>
+          <p class="lead">Welcome to job search. Firstly and most importantly, we are all about you! We are about making your job
+            search experience easier, faster and more effective. Our easy-to follow search steps and tips will help you
+            make you job search the best it can be. Start searching now and enjoy!</p>
+      </div>
+      
+      <!-- Job Search bar -->
+      <div class="search-bar my-4 text-center">
+          <div class="row justify-content-center">
+            <div class="search-input col-md-2">
+                  <input type="text" class="form-control" placeholder="Job Role" id="jobRole">
+              </div>
+              <div class="search-input col-md-2">
+                  <input type="text" class="form-control" placeholder="Job Experience" id="jobExperience">
+                </div>
+                <div class="search-input col-md-2">
+
+                  <input type="text" class="form-control" placeholder="City" id="city">
+                </div>
+
+                  <button class="btn btn-danger" id="searchButton">Search</button>
+               
+
+          </div>
+      </div>
+
+      <!-- Current Openings -->
+      <div class="current-openings-container">
+      <div class="current-openings my-4">
+          <h2>Current Openings</h2>
+          <div class="current-openings-content job-listing-container">
+          <div class="row" id="jobCardsContainer">
+            <!-- Job cards will be generated here -->
+        </div>
+
+        <!-- Page navigation -->
+          <nav aria-label="Page navigation" class="pagination-container">
+              <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="active page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item ml-auto"><a class="page-link Next" href="#">Next&nbsp;<img src="Images/left-arrow.svg" alt="next"> </a></li>
+
+              </ul>
+
+          </nav>
+
+          </div>
+      </div>
+      </div>
+      <!-- Find Divs -->
+      <div class="find">
+          <div class="opportunities">Find &nbsp;<span>Opportunities</span></div>
+          <div class="top-talent">Find &nbsp;<span>Top Talent</span></div>
+      </div>
+      
+  </main>
+  <section class="contact-container">
+    <h2 class="contact-heading text-center mb-5">Ready to talk? <br> Get in Touch</h2>
+    <div class="wave w-75">
+        <img src="./Images/wave-top.png" alt="Top Wave" style="width: 100%; height: auto;">
+    </div>
+    <div class="container contact-form">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="contact-heading">Contacts</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Official Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary send-btn">Send</button>
+                </form>
+            </div>
+            <div class="col-md-6 contact-info mt-5">
+                <p>Understanding your workforce and putting an unbiased perspective into action will help you create
+                    a positive working environment.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                <p><a href="tel:+918883949999"><i class="fa-solid fa-square-phone"></i>&nbsp; +91 - 8883949999</a>
+                </p>
+                <p><a href="mailto:contact@jobportalinfotech.in"><i class="fa-regular fa-envelope"></i>&nbsp;
+                        contact@jobportal@gmail.com</a></p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Feedback</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="wave w-75">
+        <img src="./Images/wave-bottom.png" alt="Bottom Wave" style="width: 100%; height: auto;">
+    </div>
+</section>
+
+<!-------------------------------------------------------------------- contact starts here -------------------------------------->
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-wave"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-12 footer-logo">
+              <img src="./Images/logo.jpg" alt="Logo">
+              <address>
+                  <a href="#" class="location"><i class="fa-solid fa-location-dot"></i> AC  Complex,
+                      abc Main Road, xyz, <br>
+                       Aamman Temple, chennai - 600028</a>
+              </address>
+          </div>
+          <div class="col-lg-2 col-md-4">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">All in One</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                  <li><a href="tel:+123456789" class="contact-icon"><i class="fas fa-phone"></i> 8883949999</a>
+                  </li>
+                  <li><a href="tel:+123456789" class="contact-icon"><i class="fab fa-whatsapp"></i> 9876542346</a></li>
+                  <li><a href="mailto: info@jobportal.co.in" class="contact-icon"><i
+                              class="fas fa-envelope"></i>  jobportal@gmail.com</a></li>
+              </ul>
+              <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 text-center mt-4 copyright">
+              <hr style="border-color: white;" class="small-hr">
+              <p>Copyright &copy; 2024 All Rights Reserved.</p>
+          </div>
+      </div>
+  </div>
+  <img src="./Images/shape_1.png" alt="Circles" class="footer-image">
+  <img src="./Images/shape.png" alt="Circles" class="footer-image-1">
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="header.js" defer></script>
+  <script src="jobs.js" defer></script>
+</body>
+</html>
